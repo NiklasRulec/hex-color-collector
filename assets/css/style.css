@@ -1,0 +1,152 @@
+/* ! ++++++++++ BASIC ++++++++++ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: black;
+  --white: white;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  font-family: "Regular";
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+label {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
+
+.bg {
+  background-color: rgb(252, 252, 252);
+}
+
+/* ! ++++++++++ HEADER ++++++++++ */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+}
+
+/* ! ++++++++++ MAIN ++++++++++ */
+
+main {
+  width: 100vw;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 25rem;
+  height: 15rem;
+  text-align: center;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*  ++++++++++ CARD-WRAPPER ++++++++++ */
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+
+/*  ++++++++++ CARD ++++++++++ */
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 20rem;
+  height: 30rem;
+  margin: 0 3rem 2rem 3rem;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1) translateY(-3rem);
+  box-shadow: 10px 10px 5px 5px gray;
+}
+
+.card .color {
+  margin: 0 auto 1rem auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  border-radius: 0.5rem;
+}
+
+.card .color h3 {
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  width: 90%;
+  height: 10%;
+  margin-bottom: 2rem;
+}
+
+.card button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 8rem;
+  height: 2rem;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+.card button:hover {
+  transform: scale(1.1);
+  background-color: rgb(80, 80, 80);
+  color: var(--white);
+}

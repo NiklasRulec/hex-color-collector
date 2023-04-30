@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ! ++++++++++ BACKGROUND  ++++++++++ -->
+    <div class="bg">
+      <!-- ! ++++++++++ HEADER  ++++++++++ -->
+      <header>
+        <div class="log">
+          <h1>Color Collector</h1>
+        </div>
+        <div class="links">
+          <h2>Sammle deine Lieblingsfarben an einem Ort</h2>
+        </div>
+      </header>
+      <!-- ! ++++++++++ MAIN  ++++++++++ -->
+      <main>
+        <section>
+          <form onsubmit="addCard(); return false">
+            <label
+              >Hex-Code :<br />
+              (Bsp. #123456)
+            </label>
+            <input class="hexinput" type="text" />
+            <input type="submit" value="Farbe hinzufügen" />
+          </form>
+        </section>
+        <section class="card-wrapper">
+          <!-- ! ++++++++++ Hier neue Color Cards generieren  ++++++++++ -->
+        </section>
+      </main>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
